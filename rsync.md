@@ -1,0 +1,97 @@
+# rsync 常见用法和参数
+
+`rsync`（Remote Sync）是一个快速、多功能的增量文件传输工具，广泛用于本地和远程的文件备份与同步。它只传输源文件和目标文件之间有差异的部分，因此速度非常快。
+
+---
+
+## 一、 核心常用参数
+
+| 参数 | 英文全称 | 说明 |
+| :--- | :--- | :--- |
+| **`-a`** | `--archive` | **归档模式**。等同于 `-rlptgoD`，表示递归复制并保持几乎所有的属性（符号链接、权限、修改时间、组、所有者、设备文件等），最常用。 |
+| **`-v`** | `--verbose` | 详细模式，输出正在传输的文件列表和统计信息。 |
+| **`-z`** | `--compress` | 传输时启用**压缩**，适合网络传输（如远程备份），本地传输不建议使用。 |
+| **`-h`** | `--human-readable` | 以易读的格式（如 K、M、G）输出数值。 |
+| **`-P`** | `-P` | 等同于 `--partial --progress`。**显示传输进度条**，且在断开后**支持断点续传**。 |
+| **`-n`** | `--dry-run` | **模拟运行**。显示将要执行的操作，但不实际写入或删除任何文件，常用于测试。 |
+| **`--delete`** | `--delete` | **镜像同步**。删除目标目录中那些源目录里没有的文件，保持两端完全一致。 |
+| **`--exclude`** | `--exclude=PATTERN` | **排除指定文件或目录**（如排除 `node_modules` 或 `.git`）。 |
+| **`-u`** | `--update` | 增量更新。如果目标目录下的文件更新，则跳过，不覆盖目标端较新的文件。 |
+| **`-e`** | `-e` | 指定远程 Shell（默认为 `ssh`），如自定义 SSH 端口时有用。 |
+
+---
+
+## 二、 关键细节：斜杠 `/` 的区别
+
+源路径末尾是否有斜杠 `/`，决定了 `rsync` 的复制行为：
+
+*   **没有斜杠**：会将**源目录本身**连同内容一起复制到目标目录。
+    ```bash
+    rsync -av /path/to/src /path/to/dest
+    # 结果：会在 /path/to/dest/ 下创建一个 src 目录，即 /path/to/dest/src/...
+    ```
+*   **有斜杠**：只复制**源目录下的内容**，不复制目录本身。
+    ```bash
+    rsync -av /path/to/src/ /path/to/dest
+    # 结果：直接将 src 下的文件复制到 /path/to/dest/ 下，不会创建 src 文件夹。
+    ```
+
+---
+
+## 三、 常见用法示例
+
+### 1. 本地备份（最基本的备份）
+将本地 `src` 目录内容归档备份到 `dest` 目录，并显示进度：
+```bash
+rsync -avP /path/to/src/ /path/to/dest/
+```
+
+### 2. 本地镜像同步（完全一致，包含删除）
+使目标目录 `dest` 成为源目录 `src` 的完全镜像。如果 `dest` 中有多余文件，会被删除：
+```bash
+rsync -avP --delete /path/to/src/ /path/to/dest/
+```
+> [!WARNING]
+> 使用 `--delete` 时务必小心，建议先加上 `-n`（`--dry-run`）进行模拟，确认删除列表符合预期。
+
+### 3. 排除特定文件或目录
+在备份项目时，排除临时文件和依赖包：
+```bash
+rsync -avP --exclude="node_modules/" --exclude=".git/" --exclude="*.log" /src/ /dest/
+```
+
+### 4. 备份到远程服务器（通过 SSH）
+将本地目录备份到远程服务器的指定目录下（默认使用 SSH 协议）：
+```bash
+rsync -avzP /local/path/ user@remote_ip:/remote/path/
+```
+
+### 5. 从远程服务器拉取备份到本地
+```bash
+rsync -avzP user@remote_ip:/remote/path/ /local/path/
+```
+
+### 6. 远程服务器使用非默认 SSH 端口（例如 2222 端口）
+通过 `-e` 参数指定 SSH 的连接端口：
+```bash
+rsync -avzP -e "ssh -p 2222" /local/path/ user@remote_ip:/remote/path/
+```
+
+### 7. 断点续传大文件
+如果传输大文件中途断开，可以使用 `-P`（包含 `--partial`）保留未传完的临时文件，下次执行相同命令时会自动从断点处继续：
+```bash
+rsync -avP user@remote_ip:/remote/large-file.zip /local/path/
+```
+
+---
+
+## 四、 最佳实践与测试技巧
+
+当需要执行较复杂的同步（特别是包含 `--delete` 选项）时，推荐使用 **`-n` / `--dry-run`** 来进行模拟演练：
+
+```bash
+# 仅仅显示会发生什么，不进行实际修改
+rsync -avzP --delete --dry-run /local/src/ user@remote_ip:/remote/dest/
+```
+
+观察输出的文件列表，确认无误后，再去掉 `--dry-run` 执行真正的同步。
