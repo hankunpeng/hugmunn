@@ -1,0 +1,49 @@
+[general]
+import = [
+  #"~/.config/alacritty/themes/themes/catppuccin_macchiato.toml"
+  #"~/.config/alacritty/themes/themes/gruvbox_material.toml"
+  "~/.config/alacritty/themes/themes/gruvbox_material_soft_dark.toml"
+  #"~/.config/alacritty/themes/themes/gruvbox_material_hard_dark.toml"
+  #"~/.config/alacritty/themes/themes/gruvbox_material_medium_dark.toml"
+  #"~/.config/alacritty/themes/themes/tokyo_night_storm.toml"
+  #"~/.config/alacritty/themes/themes/dracula.toml"
+]
+
+[font]
+size = 16.0
+
+#family = "FantasqueSansM Nerd Font"
+#family = "Sarasa Term SC Nerd"
+#family = "UbuntuMono Nerd Font"
+#family = "JetBrainsMono NF"
+[font.normal]
+family = "FantasqueSansM Nerd Font"
+style = "Regular"
+
+[font.bold]
+family = "FantasqueSansM Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "FantasqueSansM Nerd Font"
+style = "Italic"
+
+[font.bold_italic]
+family = "FantasqueSansM Nerd Font"
+style = "Bold Italic"
+
+# 字符间距与行高微调 (高级微调，强烈推荐)
+# [font.offset]
+# x = 1 # 调整字符左右间距。如果是正数，字距变宽；负数则变紧凑。
+# y = 2 # 调整行高（Line Height）！默认的行高可能比较挤，改成 1 或 2 
+        # 可以在代码行与行之间留出呼吸感。
+
+# 图标位置修正 (针对 Nerd Fonts)
+# [font.glyph_offset]
+# x = 0 # 调整特殊图标（如 Git 符号、Antigravity 的 Spinner）的横向偏移
+# y = 0 # 调整图标的纵向偏移。
+
+[[keyboard.bindings]]
+key = "Return"
+mods = "Shift"
+chars = "\u001B\r"
