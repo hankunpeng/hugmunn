@@ -1,6 +1,7 @@
 # AI assistant files
 .claude/
 .gemini/
+.agents/
 
 # macOS files
 .DS_Store
