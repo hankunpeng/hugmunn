@@ -1,0 +1,5 @@
+font-size = 16
+# 开启 Stylistic Set 01 (将带圈的 k 变成普通的 k)
+font-feature = ss01
+font-family = "FantasqueSansM Nerd Font"
+theme = Gruvbox Material
