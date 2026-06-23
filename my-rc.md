@@ -27,36 +27,52 @@ alias pgrk='echo "The Greek alphabet consists of 24 letters" && echo "Uppercase:
 ## TranslateGemma
 
 ```zsh
-# TranslateGemma 英译中快捷工具
-en2zh() {
-    if [ -z "$1" ]; then
-        echo "错误: 请提供需要翻译的英文文本。"
+# TranslateGemma 核心翻译函数（内部共用）
+_gemma_translate_core() {
+    local src_full="$1"
+    local src_code="$2"
+    local tg_full="$3"
+    local tg_code="$4"
+    shift 4
+    local text="$*"
+
+    if [ -z "$text" ]; then
+        echo "错误: 请提供需要翻译的文本。"
         return 1
     fi
-    local text="$*"
-    local prompt="You are a professional English (en) to Chinese (zh) translator. Your goal is to accurately convey the meaning and nuances of the original English text while adhering to Chinese grammar, vocabulary, and cultural sensitivities. Produce only the Chinese translation, without any additional explanations or commentary.
 
-Please translate the following English text into Chinese:
+    local prompt="You are a professional ${src_full} (${src_code}) to ${tg_full} (${tg_code}) translator. Your goal is to accurately convey the meaning and nuances of the original ${src_full} text while adhering to ${tg_full} grammar, vocabulary, and cultural sensitivities. Produce only the ${tg_full} translation, without any additional explanations or commentary.
+
+Please translate the following ${src_full} text into ${tg_full}:
 
 ${text}"
 
     ollama run translategemma "$prompt"
 }
 
+# TranslateGemma 英译中快捷工具
+en2zh() {
+    local text
+    if [ -z "$*" ]; then
+        # 如果没有直接带参数，提示用户输入或粘贴，read 会将整行内容存为纯字符串
+        printf "请输入要翻译的英文 (回车确认): \n> "
+        read -r text
+    else
+        text="$*"
+    fi
+    _gemma_translate_core "English" "en" "Chinese" "zh" "$text"
+}
+
 # TranslateGemma 中译英快捷工具
 zh2en() {
-    if [ -z "$1" ]; then
-        echo "错误: 请提供需要翻译的中文文本。"
-        return 1
+    local text
+    if [ -z "$*" ]; then
+        printf "请输入要翻译的中文 (回车确认): \n> "
+        read -r text
+    else
+        text="$*"
     fi
-    local text="$*"
-    local prompt="You are a professional Chinese (zh) to English (en) translator. Your goal is to accurately convey the meaning and nuances of the original Chinese text while adhering to English grammar, vocabulary, and cultural sensitivities. Produce only the English translation, without any additional explanations or commentary.
-
-Please translate the following Chinese text into English:
-
-${text}"
-
-    ollama run translategemma "$prompt"
+    _gemma_translate_core "Chinese" "zh" "English" "en" "$text"
 }
 ```
 
