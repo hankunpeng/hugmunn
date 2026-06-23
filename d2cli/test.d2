@@ -1,0 +1,17 @@
+# 声明使用 elk 布局
+direction: right
+vars: {
+  d2-config: {
+    layout-engine: elk
+  }
+}
+
+集控柜: {
+  PLC: {
+    CPU模块
+    通信模块 -> 龙芯芯片
+  }
+  电源模块 -> PLC.CPU模块
+}
+
+传感器阵列 -> 集控柜.PLC: 4-20mA信号
