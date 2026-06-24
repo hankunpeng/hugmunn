@@ -3,3 +3,4 @@ font-size = 16
 font-feature = ss01
 font-family = "FantasqueSansM Nerd Font"
 theme = Gruvbox Material
+window-save-state = always
