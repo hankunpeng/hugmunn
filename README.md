@@ -20,6 +20,7 @@
 - [markedit.md](file:///Users/alex/workspace/Muninn/markedit.md) —— **MarkEdit 快捷配置**：Markdown 编辑器快捷别名的 shell 配置。
 - [font.md](file:///Users/alex/workspace/Muninn/font.md) —— **字体配置**：FantasqueSansM Nerd Font 的安装指南。
 - [my-rc.md](file:///Users/alex/workspace/Muninn/my-rc.md) —— **个人配置文件别名**：包括 zshrc 常用别名、本机 / 公网网络查询命令以及希腊字母快速打印别名。
+- [zellij/zellij.md](file:///Users/alex/workspace/Muninn/zellij/zellij.md) —— **Zellij 终端多路复用器指南**：现代化 Rust 终端工作空间安装、核心杀手锏（提示状态栏、Wasm 插件、布局系统）以及与 Alacritty / Ghostty + Helix 组合使用说明。
 
 ### 📝 英语语法与词汇辨析
 - [changes-to-or-for.md](file:///Users/alex/workspace/Muninn/changes-to-or-for.md) —— **Changes to vs. Changes for**：介词 to（指向修改对象）与 for（指向修改目的）的用法区别与逻辑解析。
