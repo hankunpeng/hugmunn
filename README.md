@@ -2,7 +2,7 @@
 
 > Where thought meets memory in the age of AI.
 
-有两只渡鸦 **Huginn** 和 **Muninn**，它们每天破晓时分飞往人间，并在黄昏时飞回，落在 Odin 的肩膀上，低语它们所见闻的一切。
+渡鸦 **Huginn** 和 **Muninn** 每天破晓时分飞往人间，并在黄昏时飞回，落在 Odin 的肩膀上，低语它们所见闻的一切。
 
 ---
 
