@@ -27,6 +27,7 @@
 - [muninn/anthropic/ds-cc.md](muninn/anthropic/ds-cc.md) —— **DeepSeek 接入 Claude Code 指南**：如何在 Claude Code 终端助手下配置并使用 DeepSeek 语言模型。
 - [muninn/anthropic/qwen-cc.md](muninn/anthropic/qwen-cc.md) —— **Qwen 接入 Claude Code 指南**：如何在 Claude Code 下配置使用阿里云百炼 Qwen 模型。
 - [muninn/anthropic/co-author.md](muninn/anthropic/co-author.md) —— **Git 联合署名配置**：如何在 Claude Code 设置中禁用自动追加 AI 联合署名。
+- [muninn/git-force-with-lease.md](muninn/git-force-with-lease.md) —— **Git force-with-lease 详解**：深入浅出讲解 `--force-with-lease` 的工作原理、与 `--force` 的区别以及为什么它是更安全的强推方式。
 - [muninn/gfm_tutorial.md](muninn/gfm_tutorial.md) —— **GitHub Flavored Markdown 简明教程**：GFM 语法基础与进阶功能指南（包括任务列表、Alerts、公式块、Emoji 和脚注等特性）。
 - [muninn/d2cli/d2cli.md](muninn/d2cli/d2cli.md) —— **D2 CLI 绘图引擎指南**：D2 图表语言的安装、运行、布局引擎（ELK / Dagre）配置以及常见命令行参数表。
 - [muninn/rsync.md](muninn/rsync.md) —— **rsync 同步工具指南**：核心参数释义、路径斜杠区别、常见备份用例以及与 `cp` / `scp` 的差异对比。
@@ -34,7 +35,7 @@
 - [muninn/liteparse.md](muninn/liteparse.md) —— **LiteParse 工具说明**：基于 Rust 的 PDF 解析器工具安装与使用说明。
 - [muninn/markedit.md](muninn/markedit.md) —— **MarkEdit 快捷配置**：Markdown 编辑器快捷别名的 shell 配置。
 - [muninn/font.md](muninn/font.md) —— **字体配置**：FantasqueSansM Nerd Font 的安装指南。
-- [muninn/my-rc.md](muninn/my-rc.md) —— **个人配置文件别名**：包括 zshrc 常用别名、本机 / 公网网络查询命令以及希腊字母快速打印别名。
+- [muninn/zshrc.md](muninn/zshrc.md) —— **个人配置文件别名**：包括 zshrc 常用别名、本机 / 公网网络查询命令以及希腊字母快速打印别名。
 - [muninn/alacritty/alacritty.md](muninn/alacritty/alacritty.md) —— **Alacritty 分屏与窗口管理**：如何配合 Tmux 使用 Alacritty 实现终端分屏 and 窗口管理。
 - [muninn/ghostty/ghostty.md](muninn/ghostty/ghostty.md) —— **Ghostty 终端安装说明**：现代化 terminal 仿真器 Ghostty 的基本安装指南。
 - [muninn/tmux/README.md](muninn/tmux/README.md) —— **Tmux 终极配置与灾备指南**：如何恢复 Tmux 会话环境（tmux-resurrect）及加载新路径配置文件。
