@@ -1,0 +1,1 @@
+To know the absurd and the storm, and still go on.
