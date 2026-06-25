@@ -1,4 +1,4 @@
-# My .*rc
+# ~/.zshrc
 
 ## Config
 
@@ -7,6 +7,8 @@ alias czrc='nvim ~/.zshrc'
 alias szrc='source ~/.zshrc'
 alias cgty='nvim ~/.config/ghostty/config'
 alias caty='nvim ~/.config/alacritty/alacritty.toml'
+
+alias tallag='trash ~/.gemini/antigravity/brain/*(N) ~/.gemini/antigravity-cli/brain/*(N) ~/.gemini/antigravity-ide/brain/*(N)'
 ```
 
 ## Network
