@@ -78,3 +78,8 @@ zh2en() {
 }
 ```
 
+# Ollama Quick Management
+# OLLAMA_ORIGINS="*" ollama serve
+export OLLAMA_ORIGINS="*"
+alias ollama-start="nohup ollama serve > /dev/null 2>&1 &"
+alias ollama-stop="pkill ollama"
