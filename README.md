@@ -50,10 +50,10 @@
 - [muninn/changes-to-or-for.md](muninn/changes-to-or-for.md) —— **Changes to vs. Changes for**：介词 to（指向修改对象）与 for（指向修改目的）的用法区别与逻辑解析。
 - [muninn/check-review-inspect-proofread.md](muninn/check-review-inspect-proofread.md) —— **Check / Review / Inspect / Proofread 辨析**：这四个在代码评审和文本校对中常用「检查 / 审查」类动词的精细区别与记忆口诀。
 - [muninn/us-vs-uk-date-format.md](muninn/us-vs-uk-date-format.md) —— **美式与英式日期表达差异**：月-日-年 (US) 与 日-月-年 (UK) 排列差异对照、口语与书写规则以及防歧义的最佳实践。
-- [muninn/Tuesday.md](muninn/Tuesday.md) —— **Tuesday 词源深度解析**：以独手北欧战神提尔（Týr）为线索，深度剖析 Tuesday 的原始画面、核心意象与打工人战神精神。
-- [muninn/Thursday.md](muninn/Thursday.md) —— **Thursday 词源深度解析**：以手握妙尔尼尔（Mjölnir）神锤的雷神托尔（Thor）为线索，深度解构 Thursday 的原始画面、核心意象与破局之日意志。
-- [muninn/Saturday.md](muninn/Saturday.md) —— **Saturday 词源深度解析**：以手握收割镰刀的罗马农神萨图尔努斯（Saturnus）为线索，深度探寻 Saturday 的原始画面、核心意象与时间循环律动。
-- [muninn/etymology.md](muninn/etymology.md) —— **Etymology 词源深度解析**：以希腊语本源（etymon）为线索，深度剖析 etymology 的原始画面、核心意象以及作为穿透性认知工具的作用。
+- [muninn/words/Tuesday.md](muninn/words/Tuesday.md) —— **Tuesday 词源深度解析**：以独手北欧战神提尔（Týr）为线索，深度剖析 Tuesday 的原始画面、核心意象与打工人战神精神。
+- [muninn/words/Thursday.md](muninn/words/Thursday.md) —— **Thursday 词源深度解析**：以手握妙尔尼尔（Mjölnir）神锤的雷神托尔（Thor）为线索，深度解构 Thursday 的原始画面、核心意象与破局之日意志。
+- [muninn/words/Saturday.md](muninn/words/Saturday.md) —— **Saturday 词源深度解析**：以手握收割镰刀的罗马农神萨图尔努斯（Saturnus）为线索，深度探寻 Saturday 的原始画面、核心意象与时间循环律动。
+- [muninn/words/etymology.md](muninn/words/etymology.md) —— **Etymology 词源深度解析**：以希腊语本源（etymon）为线索，深度剖析 etymology 的原始画面、核心意象以及作为穿透性认知工具的作用。
 
 ### 🤖 提示词与 AI 角色
 
