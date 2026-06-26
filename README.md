@@ -53,6 +53,7 @@
 - [muninn/Tuesday.md](muninn/Tuesday.md) —— **Tuesday 词源深度解析**：以独手北欧战神提尔（Týr）为线索，深度剖析 Tuesday 的原始画面、核心意象与打工人战神精神。
 - [muninn/Thursday.md](muninn/Thursday.md) —— **Thursday 词源深度解析**：以手握妙尔尼尔（Mjölnir）神锤的雷神托尔（Thor）为线索，深度解构 Thursday 的原始画面、核心意象与破局之日意志。
 - [muninn/Saturday.md](muninn/Saturday.md) —— **Saturday 词源深度解析**：以手握收割镰刀的罗马农神萨图尔努斯（Saturnus）为线索，深度探寻 Saturday 的原始画面、核心意象与时间循环律动。
+- [muninn/etymology.md](muninn/etymology.md) —— **Etymology 词源深度解析**：以希腊语本源（etymon）为线索，深度剖析 etymology 的原始画面、核心意象以及作为穿透性认知工具的作用。
 
 ### 🤖 提示词与 AI 角色
 
