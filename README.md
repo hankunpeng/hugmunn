@@ -50,6 +50,7 @@
 - [muninn/changes-to-or-for.md](muninn/changes-to-or-for.md) —— **Changes to vs. Changes for**：介词 to（指向修改对象）与 for（指向修改目的）的用法区别与逻辑解析。
 - [muninn/check-review-inspect-proofread.md](muninn/check-review-inspect-proofread.md) —— **Check / Review / Inspect / Proofread 辨析**：这四个在代码评审和文本校对中常用「检查 / 审查」类动词的精细区别与记忆口诀。
 - [muninn/us-vs-uk-date-format.md](muninn/us-vs-uk-date-format.md) —— **美式与英式日期表达差异**：月-日-年 (US) 与 日-月-年 (UK) 排列差异对照、口语与书写规则以及防歧义的最佳实践。
+- [muninn/Tuesday.md](muninn/Tuesday.md) —— **Tuesday 词源深度解析**：以独手北欧战神提尔（Týr）为线索，深度剖析 Tuesday 的原始画面、核心意象与打工人战神精神。
 
 ### 🤖 提示词与 AI 角色
 
