@@ -29,6 +29,7 @@
 - [muninn/anthropic/co-author.md](muninn/anthropic/co-author.md) —— **Git 联合署名配置**：如何在 Claude Code 设置中禁用自动追加 AI 联合署名。
 - [muninn/git/git-force-with-lease.md](muninn/git/git-force-with-lease.md) —— **Git force-with-lease 详解**：深入浅出讲解 `--force-with-lease` 的工作原理、与 `--force` 的区别以及为什么它是更安全的强推方式。
 - [muninn/git/gitconfig.md](muninn/git/gitconfig.md) —— **Git 别名配置**：常用的 Git 快捷命令别名设置，包括状态查看、安全的强制推送、美观的提交树日志等。
+- [muninn/git/conventional-commits.md](muninn/git/conventional-commits.md) —— **Conventional Commits 规范指南**：约定式提交消息的格式说明，包括常用类型、破坏性变更（Breaking Changes）声明以及自动版本发布的优势。
 - [muninn/antigravity-guide.md](muninn/antigravity-guide.md) —— **Google Antigravity 参考手册**：汇总了 Antigravity CLI (agy)、2.0 桌面端、IDE 插件以及 Python SDK 的核心使用与配置指南。
 - [muninn/gfm_tutorial.md](muninn/gfm_tutorial.md) —— **GitHub Flavored Markdown 简明教程**：GFM 语法基础与进阶功能指南（包括任务列表、Alerts、公式块、Emoji 和脚注等特性）。
 - [muninn/d2cli/d2cli.md](muninn/d2cli/d2cli.md) —— **D2 CLI 绘图引擎指南**：D2 图表语言的安装、运行、布局引擎（ELK / Dagre）配置以及常见命令行参数表。
