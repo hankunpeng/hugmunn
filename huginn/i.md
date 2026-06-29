@@ -1,3 +1,5 @@
+What's on your mind?
+
 To know the absurd and the storm, and still go on.
 
 Grammar is the sedimentation of high-frequency patterns of expression.
