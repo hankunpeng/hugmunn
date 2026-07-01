@@ -27,7 +27,7 @@
 - [muninn/anthropic/ds-cc.md](muninn/anthropic/ds-cc.md) —— **DeepSeek 接入 Claude Code 指南**：如何在 Claude Code 终端助手下配置并使用 DeepSeek 语言模型。
 - [muninn/anthropic/qwen-cc.md](muninn/anthropic/qwen-cc.md) —— **Qwen 接入 Claude Code 指南**：如何在 Claude Code 下配置使用阿里云百炼 Qwen 模型。
 - [muninn/anthropic/co-author.md](muninn/anthropic/co-author.md) —— **Git 联合署名配置**：如何在 Claude Code 设置中禁用自动追加 AI 联合署名。
-- [muninn/git/git-force-with-lease.md](muninn/git/git-force-with-lease.md) —— **Git force-with-lease 详解**：深入浅出讲解 `--force-with-lease` 的工作原理、与 `--force` 的区别以及为什么它是更安全的强推方式。
+- [muninn/git/git.md](muninn/git/git.md) —— **Git 常用命令与安全强推指南**：包含 Git commit 提交作者重置、`--force-with-lease` 安全强推详解等实用技巧。
 - [muninn/git/gitconfig.md](muninn/git/gitconfig.md) —— **Git 别名配置**：常用的 Git 快捷命令别名设置，包括状态查看、安全的强制推送、美观的提交树日志等。
 - [muninn/git/conventional-commits.md](muninn/git/conventional-commits.md) —— **Conventional Commits 规范指南**：约定式提交消息的格式说明，包括常用类型、破坏性变更（Breaking Changes）声明以及自动版本发布的优势。
 - [muninn/antigravity-guide.md](muninn/antigravity-guide.md) —— **Google Antigravity 参考手册**：汇总了 Antigravity CLI (agy)、2.0 桌面端、IDE 插件以及 Python SDK 的核心使用与配置指南。
